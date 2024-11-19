@@ -68,6 +68,7 @@ main h1 {
   justify-items: center;
   flex-direction: column;
   margin-bottom: 42px;
+  padding: 1em;
 }
 main h1 span {
   display: block;
@@ -153,4 +154,21 @@ footer .xarxes a {
 }
 footer .xarxes a:hover {
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  /* Cambia el diseño en pantallas más pequeñas */
+  footer {
+    flex-direction: column; /* Cambia la dirección a columna */
+    align-items: center; /* Centra los elementos en la columna */
+    justify-content: center; /* Ajusta el espacio */
+    padding: 20px; /* Reduce el padding para móviles */
+    gap: 1em;
+  }
+  footer .xarxes ul {
+    justify-content: center;
+  }
+  footer address {
+    text-align: center;
+  }
 }
